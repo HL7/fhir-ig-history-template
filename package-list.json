@@ -1,0 +1,21 @@
+{
+ "package-id" : "id",
+ "title" : "title", 
+ "canonical" : "url", 
+ "introduction" : "md",
+ "list" : [{
+  "version" : "current",
+  "desc" : "Continuous Integration Build (latest in version control)",
+  "path" : "http://build.fhir.org/ig/HL7/xxx",
+  "status" : "ci-build",
+  "current" : true
+ },{
+  "version" : "version",  
+  "date" : "date", 
+  "desc" : "desc",   
+  "changes" : "link",
+  "path" : "url",   
+  "status" : "status",   
+  "sequence" : "sequence"
+ }]
+}
