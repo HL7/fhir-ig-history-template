@@ -12,19 +12,16 @@
   <link href="assets-hist/css/project.css" rel="stylesheet"/>
   <link href="assets-hist/css/pygments-manni.css" rel="stylesheet"/>
 	<link href="jquery-ui.css" rel="stylesheet"/>
-  <script type="application/javascript" src="http://hl7.org/fhir/history-cm.js"> </script>
-  <script type="application/javascript" src="http://hl7.org/fhir/history.js"> </script>
+  <script type="application/javascript" src="https://hl7.org/fhir/history-cm.js"> </script>
+  <script type="application/javascript" src="https://hl7.org/fhir/history.js"> </script>
   <link href="history.css" rel="stylesheet"/>
   <!-- header.template starts here -->
 $header$  
   <!-- header.template ends here -->
 </head>
-<body>
-  <!-- preamble.template starts here -->
-
+<!-- preamble.template starts here -->
 $preamble$
-
-  <!-- preamble.template ends here -->
+<!-- preamble.template ends here -->
 
 <div class="col-12">
 

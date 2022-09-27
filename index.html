@@ -2,7 +2,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>XXXXXX FHIR IG</title>
+  <title>[%title%] FHIR IG</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content="Point-of-care Device Implementation Guide" />
@@ -11,34 +11,34 @@
   <link rel="stylesheet" href="fhir.css"/>
 
      <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="dist/css/bootstrap.css"/>
-  <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+  <link rel="stylesheet" href="dist-hist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="assets-hist/css/bootstrap-fhir.css"/>
 
     <!-- Project extras -->
-  <link rel="stylesheet" href="assets/css/project.css"/>
-  <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+  <link rel="stylesheet" href="assets-hist/css/project.css"/>
+  <link rel="stylesheet" href="assets-hist/css/pygments-manni.css"/>
 	<link rel="stylesheet" href="jquery-ui.css"/>
 
     <!-- Favicons -->
-  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
-  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets-hist/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets-hist/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets-hist/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets-hist/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets-hist/ico/favicon.png"/>
 
 </head>
 <body>
 
  <div id="segment-header" class="segment">    <!-- segment-header -->
   <div class="container">    <!-- container -->
-   <a no-external="true" id="logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="logo fhir"/></a>
+   <a no-external="true" id="logo" href="http://hl7.org/fhir"><img src="assets-hist/images/fhir-logo-www.png" alt="logo fhir"/></a>
 <div>
 <a no-external="true" id="hl7-logo" href="http://www.hl7.org">
-     <img src="assets/images/hl7-logo.png" alt="visit the hl7 website" width="42" height="50"/>
+     <img src="assets-hist/images/hl7-logo.png" alt="visit the hl7 website" width="42" height="50"/>
     </a>
    </div>
    <div style="font-size:24px;padding-top: 20px;" id="ig-status">
-<b>XXXXXX FHIR IG</b>
+<b>[%title%] FHIR IG</b>
 </div>
  </div>
   <div class="container">    <!-- container -->
@@ -83,9 +83,9 @@
 
     <!-- ============CONTENT CONTENT=============== -->
 
-<h2 id="us-core-implementation-guide" class="no_toc">XXXXXX FHIR IG</h2>
+<h2 id="us-core-implementation-guide" class="no_toc">[%title%] FHIR IG</h2>
 <p>
-See the <a href="history.cfml">directory of released versions</a>.
+See the <a href="history.html">directory of released versions</a>.
 <p/>
  </div>
 
@@ -110,7 +110,7 @@ See the <a href="history.cfml">directory of released versions</a>.
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-            XXXXXX &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir">FHIR</a> IG |
+      [%id%]:[%title%] &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir">FHIR</a> IG |
                <!-- <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhirlicense.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
         </p>
@@ -130,11 +130,11 @@ See the <a href="history.cfml">directory of released versions</a>.
   <!-- Bootstrap core JavaScript
 ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-<script src="./assets/js/jquery.js"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-<script src="./dist/js/bootstrap.min.js"> </script>
-<script src="./assets/js/respond.min.js"> </script>
+<script src="./assets-hist/js/jquery.js"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist-hist/js/bootstrap.min.js"> </script>
+<script src="./assets-hist/js/respond.min.js"> </script>
 
-<script src="./assets/js/fhir.js"> </script>
+<script src="./assets-hist/js/fhir.js"> </script>
 
   <!-- Analytics Below
 ================================================== -->
