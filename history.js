@@ -41,20 +41,22 @@ function row(tableTagsArray, date, url, curl, ver, fver, desc, cl, hasFhirVersio
   var dl = 'full-ig.zip';
   if (curl == 'http://hl7.org/fhir' || curl == 'https://hl7.org/fhir') {
     dl = 'fhir-spec.zip';
-  } 
+  }
+  // the download and packages of a release can be held elsewhere (e.g. the assets of a GitHub release)
+  var bin = (jo != null && jo["binaries-location"]) ? jo["binaries-location"] : url;
 
   tableTagsArray.push('<td><a title="Home Page" href="'+url+'"><img src="https://hl7.org/fhir/assets/images/page.png"/></a>&nbsp;'+
-    '<a title="Download" href="'+url+'/'+dl+'"><img src="https://hl7.org/fhir/assets/images/download.gif"/></a>&nbsp;');
+    '<a title="Download" href="'+bin+'/'+dl+'"><img src="https://hl7.org/fhir/assets/images/download.gif"/></a>&nbsp;');
   tableTagsArray.push(
     '<a title="QA Page" href="'+url+'/qa.html"><img src="https://hl7.org/fhir/assets/images/qa.png"/></a>&nbsp; ');
   if (jo == null || jo["sub-packages"] == null) {
     tableTagsArray.push(
-       '<a title="NPM Package" href="'+url+'/package.tgz"><img src="https://hl7.org/fhir/assets/images/npm.png"/></a>&nbsp;')
+       '<a title="NPM Package" href="'+bin+'/package.tgz"><img src="https://hl7.org/fhir/assets/images/npm.png"/></a>&nbsp;')
   } else {
     for (var key in jo["sub-packages"]) {
       var s = jo["sub-packages"][key];
       tableTagsArray.push(
-         '<a title="NPM Package '+s+'" href="'+url+'/'+s+'.tgz"><img src="https://hl7.org/fhir/assets/images/npm.png"/></a>&nbsp;')
+         '<a title="NPM Package '+s+'" href="'+bin+'/'+s+'.tgz"><img src="https://hl7.org/fhir/assets/images/npm.png"/></a>&nbsp;')
     }
   }
   tableTagsArray.push('</td></tr>');
